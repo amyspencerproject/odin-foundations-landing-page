@@ -75,17 +75,25 @@ select {
 }
 
 /* ========================= Base Styles ========================= */
+:root {
+  --white: hsl(90, 17%, 98%);
+  --light-grey: hsla(220, 13%, 91%, 1);
+  --dark-grey: hsla(215, 28%, 17%, 1);
+  --dark-background: hsl(215, 28%, 17%);
+  --blue: hsl(181, 83%, 31%);
+}
 
 body {
   font-family: "Oxygen", sans-serif;
 }
 
 header {
+  background-color: var(--dark-background);
+  color: var(--white);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 3rem;
 }
 
 ul {
@@ -93,6 +101,7 @@ ul {
   flex-flow: row nowrap;
   gap: 2rem;
   list-style-type: none;
+  margin: 1rem 3rem;
 }
 
 li {
@@ -107,6 +116,7 @@ main {
 
 .logo-container {
   width: 5rem;
+  margin: 1rem 3rem;
 }
 
 .logo {
@@ -114,6 +124,8 @@ main {
 }
 
 .hero-container {
+  background-color: var(--dark-background);
+  color: var(--white);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -121,26 +133,55 @@ main {
 
 .hero-info {
   width: 50%;
+  margin-left: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero-info > p {
+  color: var(--light-grey);
+  font-size: 1.125rem;
 }
 
 .hero-image {
   width: 50%;
+  margin: 3rem;
+}
+
+.btn-hero {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 3rem;
+  margin: 1rem 0;
 }
 
 .random-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--dark-grey);
+  gap: 4rem;
 }
 
 .random-card-container {
   display: flex;
   flex-flow: row nowrap;
   gap: 2rem;
+  margin-inline: 3rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
+  font-size: 2.25rem;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .card {
@@ -148,15 +189,33 @@ h2 {
   flex-flow: column wrap;
 }
 
+.card > p {
+  margin: 1rem 0.5rem;
+}
+
+.card > img {
+  width: 80%;
+}
+
+.quote-section {
+  background-color: var(--light-grey);
+  padding: 5rem 0;
+}
+
 .quote {
+  color: var(--dark-grey);
+  font-size: 2rem;
   font-family: "Libre Baskerville", serif;
+  font-style: italic;
   text-align: left;
+  margin: 3rem;
 }
 
 .author {
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
   text-align: right;
+  margin-right: 3rem;
 }
 
 .action {
@@ -164,11 +223,41 @@ h2 {
   justify-content: center;
   gap: 2rem;
   align-items: end;
-  width: 75%;
+  width: 80%;
+  margin: 3rem;
+  padding: 3rem;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+h3 {
+  color: var(--white);
+  font-size: 2rem;
+  /* margin-bottom: 0.5rem; */
+}
+
+.action-text > p {
+  color: var(--light-grey);
+}
+
+.btn-action {
+  background-color: var(--blue);
+  color: var(--white);
+  border: solid 3px var(--white);
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  padding: 0.5rem 3rem;
+  /* margin: 1rem 0; */
 }
 
 footer {
+  background-color: var(--dark-background);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: end;
+  padding: 2rem;
+  /* margin-top: 10rem; */
 }
