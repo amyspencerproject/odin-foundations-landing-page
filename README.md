@@ -6,3 +6,4 @@ This is a foundational assignment for The Odin Project coursework.
 
 - Website - [Amy Spencer](https://spencerproject.com/)
 - Linkedin - [amyspencercodes](https://www.linkedin.com/in/amyspencercodes/)
+# odin-foundations-landing-page
